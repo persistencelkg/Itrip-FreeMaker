@@ -1,4 +1,4 @@
-package ${package}.mapper.${lowerClassName};
+package ${package}.mapper.${table.daoName};
 import ${package}.pojo.${table.className};
 import org.apache.ibatis.annotations.Param;
 import java.util.List;
@@ -12,9 +12,9 @@ public interface ${table.className}Mapper {
 
 	public Integer get${table.className}CountByMap(Map<String,Object> param)throws Exception;
 
-	public Integer insert${table.className}(${table.className} ${lowerClassName})throws Exception;
+	public Integer insert${table.className}(${table.className} ${table.daoName})throws Exception;
 
-	public Integer update${table.className}(${table.className} ${lowerClassName})throws Exception;
+	public Integer update${table.className}(${table.className} ${table.daoName})throws Exception;
 
 	public Integer delete${table.className}ById(@Param(value = "id") Long id)throws Exception;
 

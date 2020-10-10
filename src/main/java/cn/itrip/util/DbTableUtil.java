@@ -62,6 +62,7 @@ public class DbTableUtil {
                 table.setClassName(StringUtil.removeUnderLine(tableName));
                 table.setColumnList(getColumns(tableName));
                 table.setComment(getTableComment(tableName));
+                table.setDaoName(StringUtil.toLowerFirstWord(StringUtil.removeUnderLine(tableName)));
                 tableList.add(table);
             }
         } catch (SQLException e) {
@@ -122,6 +123,8 @@ public class DbTableUtil {
 
         //获取列名
             String columnName = rsColumns.getString("COLUMN_NAME");
+            if(columnName.equals("id"))
+                continue;
         //获取列的类型
             String typeName = rsColumns.getString("TYPE_NAME");
         //获取列的注释

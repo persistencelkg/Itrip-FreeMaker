@@ -3,6 +3,8 @@ package cn.itrip;
 import cn.itrip.bean.DBTable;
 import cn.itrip.handler.MvcHandler;
 import cn.itrip.util.DbTableUtil;
+import lombok.Data;
+import lombok.EqualsAndHashCode;
 
 import java.util.List;
 

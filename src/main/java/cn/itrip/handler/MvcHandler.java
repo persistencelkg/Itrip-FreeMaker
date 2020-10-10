@@ -13,6 +13,7 @@ import java.util.Map;
  * 三层组件的模版生成控制器
  * 需要注意两点: 此处的模版生成 是基于分布式系统  如果是小型项目 建议直接修改PathContant里的参数
  */
+
 public class MvcHandler {
 
 

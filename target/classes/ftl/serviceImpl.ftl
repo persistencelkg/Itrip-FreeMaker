@@ -1,5 +1,5 @@
-package ${package}.service.${lowerClassName};
-import ${package}.mapper.${lowerClassName}.${table.className}Mapper;
+package ${package}.service.${table.daoName};
+import ${package}.mapper.${table.daoName}.${table.className}Mapper;
 import ${package}.pojo.${table.className};
 import ${package}.common.EmptyUtils;
 import ${package}.common.Page;
@@ -9,48 +9,48 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 import java.util.Map;
-import ${package}.common.Constants;
+import ${package}.common.SysConstant;
 @Service
 public class ${table.className}ServiceImpl implements ${table.className}Service {
 
     @Resource
-    private ${table.className}Mapper ${lowerClassName}Mapper;
+    private ${table.className}Mapper ${table.daoName}Mapper;
 
     public ${table.className} get${table.className}ById(Long id)throws Exception{
-        return ${lowerClassName}Mapper.get${table.className}ById(id);
+        return ${table.daoName}Mapper.get${table.className}ById(id);
     }
 
     public List<${table.className}>	get${table.className}ListByMap(Map<String,Object> param)throws Exception{
-        return ${lowerClassName}Mapper.get${table.className}ListByMap(param);
+        return ${table.daoName}Mapper.get${table.className}ListByMap(param);
     }
 
     public Integer get${table.className}CountByMap(Map<String,Object> param)throws Exception{
-        return ${lowerClassName}Mapper.get${table.className}CountByMap(param);
+        return ${table.daoName}Mapper.get${table.className}CountByMap(param);
     }
 
-    public Integer itriptxAdd${table.className}(${table.className} ${lowerClassName})throws Exception{
-            ${lowerClassName}.setCreationDate(new Date());
-            return ${lowerClassName}Mapper.insert${table.className}(${lowerClassName});
+    public Integer itriptxAdd${table.className}(${table.className} ${table.daoName})throws Exception{
+        ${table.daoName}.setCreationDate(new Date());
+        return ${table.daoName}Mapper.insert${table.className}(${table.daoName});
     }
 
-    public Integer itriptxModify${table.className}(${table.className} ${lowerClassName})throws Exception{
-        ${lowerClassName}.setModifyDate(new Date());
-        return ${lowerClassName}Mapper.update${table.className}(${lowerClassName});
+    public Integer itriptxModify${table.className}(${table.className} ${table.daoName})throws Exception{
+        ${table.daoName}.setModifyDate(new Date());
+        return ${table.daoName}Mapper.update${table.className}(${table.daoName});
     }
 
     public Integer itriptxDelete${table.className}ById(Long id)throws Exception{
-        return ${lowerClassName}Mapper.delete${table.className}ById(id);
+        return ${table.daoName}Mapper.delete${table.className}ById(id);
     }
 
     public Page<${table.className}> query${table.className}PageByMap(Map<String,Object> param,Integer pageNo,Integer pageSize)throws Exception{
-        Integer total = ${lowerClassName}Mapper.get${table.className}CountByMap(param);
-        pageNo = EmptyUtils.isEmpty(pageNo) ? Constants.DEFAULT_PAGE_NO : pageNo;
-        pageSize = EmptyUtils.isEmpty(pageSize) ? Constants.DEFAULT_PAGE_SIZE : pageSize;
+        Integer total = ${table.daoName}Mapper.get${table.className}CountByMap(param);
+        pageNo = EmptyUtils.isEmpty(pageNo) ? SysConstant.DEFAULT_PAGE_NO : pageNo;
+        pageSize = EmptyUtils.isEmpty(pageSize) ? SysConstant.DEFAULT_PAGE_SIZE : pageSize;
         Page page = new Page(pageNo, pageSize, total);
         param.put("beginPos", page.getBeginPos());
         param.put("pageSize", page.getPageSize());
-        List<${table.className}> ${lowerClassName}List = ${lowerClassName}Mapper.get${table.className}ListByMap(param);
-        page.setRows(${lowerClassName}List);
+        List<${table.className}> ${table.daoName}List = ${table.daoName}Mapper.get${table.className}ListByMap(param);
+        page.setRows(${table.daoName}List);
         return page;
     }
 

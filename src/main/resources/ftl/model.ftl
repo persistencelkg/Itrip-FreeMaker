@@ -1,21 +1,25 @@
 package ${package}.pojo;
-import java.io.Serializable;
 import java.util.Date;
-/***
-*   ${table.comment}
-*/
-public class ${table.className} implements Serializable {
-        <#list table.cloumns as cloumn>
-        //${cloumn.comment}
-        private ${cloumn.javaType} ${cloumn.fieldName};
-        </#list>
-        //get set 方法
-        <#list table.cloumns as cloumn>
-            public void set${cloumn.upperCasecloumnName} (${cloumn.javaType}  ${cloumn.fieldName}){
-                this.${cloumn.fieldName}=${cloumn.fieldName};
-            }
-            public  ${cloumn.javaType} get${cloumn.upperCasecloumnName}(){
-                return this.${cloumn.fieldName};
-            }
+import lombok.Data;
+import lombok.EqualsAndHashCode;
+
+
+
+/**
+ * ${table.comment}
+ * @description:
+ * @author: 浮沉
+ * @create: ${.now}
+ */
+
+@Data
+@EqualsAndHashCode(callSuper = true)
+public class ${table.className} extend BasePojo{
+        <#list table.columnList as column>
+        <#-- freemarker包括两个引号 -->
+            <#if column.comment?trim?length gt 2>
+            //${column.comment}
+            </#if>
+            private ${column.columnJavaType} ${column.attributeName};
         </#list>
 }

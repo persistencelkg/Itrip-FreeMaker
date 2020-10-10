@@ -1,41 +1,40 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<!DOCTYPE mapper
-        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+<!DOCTYPE
+        mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="cn.${package}.mapper.${lowerClassName}.${table.className}Mapper">
+<mapper namespace="${package}.mapper.${table.daoName}.${table.className}Mapper">
 
-    <select id="get${table.className}ById" resultType="cn.${package}.pojo.${table.className}" >
+
+    <#--查询sql片段提炼-->
+    <sql id="selectSql">
         select
-        <#list table.cloumns as cloumn>
-            <#if cloumn_has_next>
-                ${cloumn.cloumnName} as ${cloumn.fieldName},
-            <#else>
-                ${cloumn.cloumnName} as ${cloumn.fieldName}
+        <#list table.columnList as column>
+        <#-- 最后一个逗号处理 -->
+            <#if column_has_next>
+                ${column.columnName} as ${column.attributeName},
+            <#else >
+                ${column.columnName} as ${column.attributeName}
             </#if>
         </#list>
         from ${table.tableName}
+    </sql>
+
+    <select id="get${table.className}ById" resultType="${table.className}" >
+        <include refid="selectSql"/>
         <trim prefix="where" prefixOverrides="and | or">
             <if test="id != null">
-                and id=${r"#{id}"}
+                and id = ${r"#{id}"}
             </if>
         </trim>
     </select>
 
-    <select id="get${table.className}ListByMap" resultType="cn.${package}.pojo.${table.className}" parameterType="java.util.Map">
-        select
-        <#list table.cloumns as cloumn>
-            <#if cloumn_has_next>
-                ${cloumn.cloumnName} as ${cloumn.fieldName},
-            <#else>
-                ${cloumn.cloumnName} as ${cloumn.fieldName}
-            </#if>
-        </#list>
-        from ${table.tableName}
+    <select id="get${table.className}ListByMap" resultType="${table.className}" parameterType="java.util.Map">
+        <include refid="selectSql"/>
         <trim prefix="where" prefixOverrides="and | or">
-            <#list table.cloumns as cloumn>
-                <#if cloumn_has_next>
-                    <if test="${cloumn.fieldName} != null and ${cloumn.fieldName}!=''">
-                        and ${cloumn.cloumnName}=${r"#{"}${cloumn.fieldName}}
+            <#list table.columnList as column>
+                <#if column_has_next>
+                    <if test="${column.attributeName} != null and ${column.attributeName}!=''">
+                        and ${column.columnName} = ${r"#{"}${column.attributeName}}
                     </if>
                 </#if>
             </#list>
@@ -47,62 +46,48 @@
     </select>
 
     <select id="get${table.className}CountByMap" resultType="Integer"  parameterType="java.util.Map">
-        select count(*) from ${table.tableName}
+        select count(1) from ${table.tableName}
         <trim prefix="where" prefixOverrides="and | or">
-        <#list table.cloumns as cloumn>
-            <#if cloumn_has_next>
-                <if test="${cloumn.fieldName} != null and ${cloumn.fieldName}!=''">
-                    and ${cloumn.cloumnName}=${r"#{"}${cloumn.fieldName}}
-                </if>
-            <#else>
-                <if test="${cloumn.fieldName} != null and ${cloumn.fieldName}!=''">
-                    and ${cloumn.cloumnName}=${r"#{"}${cloumn.fieldName}}
-                </if>
-            </#if>
-        </#list>
+            <#list table.columnList as column>
+                <#if column_has_next>
+                    <if test="${column.attributeName} != null and ${column.attributeName}!=''">
+                        and ${column.columnName} = ${r"#{"}${column.attributeName}}
+                    </if>
+                </#if>
+            </#list>
         </trim>
     </select>
 
-    <insert id="insert${table.className}" parameterType="cn.${package}.pojo.${table.className}">
-        insert into ${table.tableName}(
-        <#list table.cloumns as cloumn>
-                <#if cloumn_has_next>
-                    <#if  cloumn.cloumnName!='id'>
-                        ${cloumn.cloumnName},
-                    </#if>
-                <#else>
-                    <#if  cloumn.cloumnName!='id'>
-                        ${cloumn.cloumnName})
-                    </#if>
+    <insert id="insert${table.className}" parameterType="${table.className}">
+        insert into ${table.tableName}
+        (
+            <#list table.columnList as column>
+                <#if column_has_next>
+                    ${column.columnName},
+                <#else >
+                    ${column.columnName}
                 </#if>
-        </#list>
+
+            </#list>
+        )
         values(
-        <#list table.cloumns as cloumn>
-            <#if cloumn_has_next>
-                <#if  cloumn.cloumnName!='id'>
-                     ${r"#{"}${cloumn.fieldName}},
+            <#list table.columnList as column>
+                <#if column_has_next>
+                    ${r"#{"}${column.attributeName}},
+                <#else >
+                    ${r"#{"}${column.attributeName}}
                 </#if>
-            <#else>
-                <#if  cloumn.cloumnName!='id'>
-                    ${r"#{"}${cloumn.fieldName}})
-                </#if>
-            </#if>
-        </#list>
+            </#list>
+        )
     </insert>
 
-    <update id="update${table.className}" parameterType="cn.${package}.pojo.${table.className}">
+    <update id="update${table.className}" parameterType="${table.className}">
         update ${table.tableName}
         <trim prefix="set" suffixOverrides="," suffix="where id=${r"#{"}id}">
-            <#list table.cloumns as cloumn>
-                <#if cloumn_has_next>
-                    <if test="${cloumn.fieldName} != null and ${cloumn.fieldName}!=''">
-                        ${cloumn.cloumnName}=${r"#{"}${cloumn.fieldName}},
-                    </if>
-                <#else>
-                    <if test="${cloumn.fieldName} != null and ${cloumn.fieldName}!=''">
-                        ${cloumn.cloumnName}=${r"#{"}${cloumn.fieldName}}
-                    </if>
-                </#if>
+            <#list table.columnList as column>
+                <if test="${column.attributeName} != null">
+                    ${column.columnName} = ${r"#{"}${column.attributeName}}
+                </if>
             </#list>
         </trim>
     </update>
