@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="241fa27c-e8ba-4264-aab3-1943aa1e4739" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="enabledProfiles">
+      <list>
+        <option value="env-dev" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1idz6K8g6SuFnLs9AKn8VDwVCK9" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="extract.method.default.visibility" value="private" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="settings.github" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="cn.itrip.util" />
+      <recent name="cn.itrip" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\MyGitStore\GitHub\Itrip-FreeMaker\src\main\java\cn\itrip\handler" />
+      <recent name="D:\MyGitStore\GitHub\Itrip-FreeMaker\src\main\java\cn\itrip\util" />
+      <recent name="D:\MyGitStore\GitHub\Itrip-FreeMaker\src\main\java\cn\itrip\bean" />
+      <recent name="D:\MyGitStore\GitHub\Itrip-FreeMaker\src\main\resources" />
+      <recent name="D:\MyGitStore\GitHub\Itrip-FreeMaker\src\main\resources\ftl" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.Genterator">
+    <configuration name="DbTableUtil" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="cn.itrip.util.DbTableUtil" />
+      <module name="Itrip-FreeMaker" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cn.itrip.util.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Genterator" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="cn.itrip.Genterator" />
+      <module name="Itrip-FreeMaker" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cn.itrip.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Genterator" />
+        <item itemvalue="Application.DbTableUtil" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration>C:\Users\追风\AppData\Roaming\Subversion</configuration>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="241fa27c-e8ba-4264-aab3-1943aa1e4739" name="Default Changelist" comment="" />
+      <created>1602252079701</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1602252079701</updated>
+      <workItem from="1602252081411" duration="1592000" />
+      <workItem from="1602253739136" duration="678000" />
+      <workItem from="1602254525303" duration="5701000" />
+      <workItem from="1602316949877" duration="8083000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="452" y="94" key="#Project_Structure" timestamp="1602253845135">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="452" y="94" key="#Project_Structure/0.0.1920.1040@0.0.1920.1040" timestamp="1602253845135" />
+    <state x="647" y="148" key="#com.intellij.ide.util.MemberChooser" timestamp="1602259651658">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="647" y="148" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1602259651658" />
+    <state x="690" y="199" key="FileChooserDialogImpl" timestamp="1602325511311">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="690" y="199" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1602325511311" />
+    <state x="769" y="386" width="381" height="369" key="Github.ShareDialog" timestamp="1602325493953">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="769" y="386" width="381" height="369" key="Github.ShareDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1602325493953" />
+    <state width="1867" height="267" key="GridCell.Tab.0.bottom" timestamp="1602325275873">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1867" height="267" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1602325275873" />
+    <state width="1867" height="267" key="GridCell.Tab.0.center" timestamp="1602325275873">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1867" height="267" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1602325275873" />
+    <state width="1867" height="267" key="GridCell.Tab.0.left" timestamp="1602325275873">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1867" height="267" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1602325275873" />
+    <state width="1867" height="267" key="GridCell.Tab.0.right" timestamp="1602325275873">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1867" height="267" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1602325275873" />
+    <state x="377" y="92" key="Maven.ArtifactSearchDialog" timestamp="1602253879545">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="377" y="92" key="Maven.ArtifactSearchDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1602253879545" />
+    <state x="731" y="446" key="ReplaceDuplicatesPrompt" timestamp="1602320469915">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="731" y="446" key="ReplaceDuplicatesPrompt/0.0.1920.1040@0.0.1920.1040" timestamp="1602320469915" />
+    <state x="330" y="75" key="SettingsEditor" timestamp="1602325483067">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="330" y="75" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1602325483067" />
+    <state x="627" y="217" width="665" height="619" key="extract.method.dialog" timestamp="1602320467447">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="627" y="217" width="665" height="619" key="extract.method.dialog/0.0.1920.1040@0.0.1920.1040" timestamp="1602320467447" />
+    <state x="503" y="170" width="831" height="682" key="find.popup" timestamp="1602317233120">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="503" y="170" width="831" height="682" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1602317233120" />
+    <state width="375" height="104" key="javadoc.popup.new" timestamp="1602324950689">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="375" height="104" key="javadoc.popup.new/0.0.1920.1040@0.0.1920.1040" timestamp="1602324950689" />
+    <state x="532" y="237" key="run.anything.popup" timestamp="1602319807527">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="532" y="237" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1602319807527" />
+  </component>
+</project>
