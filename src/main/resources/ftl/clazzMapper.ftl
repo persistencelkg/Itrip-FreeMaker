@@ -8,7 +8,7 @@ public interface ${table.className}Mapper {
 
 	public ${table.className} get${table.className}ById(@Param(value = "id") Long id)throws Exception;
 
-	public List<${table.className}>	get${table.className}ListByMap(Map<String,Object> param)throws Exception;
+	public List<${table.className}> get${table.className}ListByMap(Map<String,Object> param)throws Exception;
 
 	public Integer get${table.className}CountByMap(Map<String,Object> param)throws Exception;
 

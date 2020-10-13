@@ -14,7 +14,7 @@ import lombok.EqualsAndHashCode;
 
 @Data
 @EqualsAndHashCode(callSuper = true)
-public class ${table.className} extend BasePojo{
+public class ${table.className} extends BasePojo{
         <#list table.columnList as column>
         <#-- freemarker包括两个引号 -->
             <#if column.comment?trim?length gt 2>

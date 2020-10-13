@@ -1,15 +1,17 @@
 package ${package}.service.${table.daoName};
 import ${package}.mapper.${table.daoName}.${table.className}Mapper;
 import ${package}.pojo.${table.className};
-import ${package}.common.EmptyUtils;
 import ${package}.common.Page;
+import com.mysql.cj.util.StringUtils;
+import ${package}.common.SysConstant;
 import org.springframework.stereotype.Service;
 import javax.annotation.Resource;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 import java.util.Map;
-import ${package}.common.SysConstant;
+
+
 @Service
 public class ${table.className}ServiceImpl implements ${table.className}Service {
 
@@ -44,8 +46,8 @@ public class ${table.className}ServiceImpl implements ${table.className}Service 
 
     public Page<${table.className}> query${table.className}PageByMap(Map<String,Object> param,Integer pageNo,Integer pageSize)throws Exception{
         Integer total = ${table.daoName}Mapper.get${table.className}CountByMap(param);
-        pageNo = EmptyUtils.isEmpty(pageNo) ? SysConstant.DEFAULT_PAGE_NO : pageNo;
-        pageSize = EmptyUtils.isEmpty(pageSize) ? SysConstant.DEFAULT_PAGE_SIZE : pageSize;
+        pageNo =  StringUtils.isNullOrEmpty(pageNo) ? SysConstant.DEFAULT_PAGE_NO : pageNo;
+        pageSize =  StringUtils.isNullOrEmpty(pageSize) ? SysConstant.DEFAULT_PAGE_SIZE : pageSize;
         Page page = new Page(pageNo, pageSize, total);
         param.put("beginPos", page.getBeginPos());
         param.put("pageSize", page.getPageSize());

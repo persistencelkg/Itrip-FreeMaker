@@ -53,6 +53,13 @@ public class DbTableUtil {
             //shemaPattern: 那个数据库 默认就是连接的数据库名 为null就是默认
             //tableNamePattern: 表名的正则匹配 为null代表都要
             //最后一个取出所有表信息
+            //**********************************************************************************************************
+            //                                                 特别注意
+            //mysql驱动5.x 获取连接数据库信息 直接使用metaData.getTables(null, null, null, new String[]{"TABLE"});
+            //mysql驱动8.x 若直接使用上面会获取所有数据库的所有表信息
+            //解决方案: 在db.propertie 设置nullCatalogMeansCurrent为true, 8.x默认为false
+            //**********************************************************************************************************
+
             rs = metaData.getTables(null, null, null, new String[]{"TABLE"});
         //遍历结果集
             while(rs.next()) {
@@ -123,7 +130,9 @@ public class DbTableUtil {
 
         //获取列名
             String columnName = rsColumns.getString("COLUMN_NAME");
-            if(columnName.equals("id"))
+            //为了抽离BasePojo 需要这段代码 但是其他模版生成不能有 故分开启动模版生成
+            if(columnName.equals("id") || columnName.equals("creationDate")||
+                        columnName.equals("createdBy") || columnName.equals("modifyDate") || columnName.equals("modifiedBy") )
                 continue;
         //获取列的类型
             String typeName = rsColumns.getString("TYPE_NAME");

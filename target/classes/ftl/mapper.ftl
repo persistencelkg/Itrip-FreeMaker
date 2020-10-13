@@ -7,16 +7,7 @@
 
     <#--查询sql片段提炼-->
     <sql id="selectSql">
-        select
-        <#list table.columnList as column>
-        <#-- 最后一个逗号处理 -->
-            <#if column_has_next>
-                ${column.columnName} as ${column.attributeName},
-            <#else >
-                ${column.columnName} as ${column.attributeName}
-            </#if>
-        </#list>
-        from ${table.tableName}
+        select * from ${table.tableName}
     </sql>
 
     <select id="get${table.className}ById" resultType="${table.className}" >

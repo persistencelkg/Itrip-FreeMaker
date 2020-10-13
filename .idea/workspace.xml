@@ -1,22 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="241fa27c-e8ba-4264-aab3-1943aa1e4739" name="Default Changelist" comment="测试运行通过,正式发布">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="241fa27c-e8ba-4264-aab3-1943aa1e4739" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/test/java/TestTime.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/TestTime.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/cn/itrip/Genterator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/itrip/Genterator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/itrip/handler/MvcHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/itrip/handler/MvcHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/cn/itrip/util/DbTableUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/itrip/util/DbTableUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/itrip/util/PathConstant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/itrip/util/PathConstant.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/db.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/db.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/ftl/clazzMapper.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/ftl/clazzMapper.ftl" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/ftl/mapper.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/ftl/mapper.ftl" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/ftl/model.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/ftl/model.ftl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/ftl/service.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/ftl/service.ftl" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/ftl/serviceImpl.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/ftl/serviceImpl.ftl" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/cn/itrip/Genterator.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/itrip/Genterator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/itrip/handler/MvcHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/itrip/handler/MvcHandler.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/cn/itrip/util/DbTableUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/itrip/util/DbTableUtil.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/cn/itrip/util/PathConstant.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/cn/itrip/util/PathConstant.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/db.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/db.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/ftl/clazzMapper.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ftl/clazzMapper.ftl" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/ftl/mapper.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ftl/mapper.ftl" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/ftl/model.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/ftl/model.ftl" afterDir="false" />
@@ -128,9 +129,44 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="PropertiesUtil" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="cn.itrip.util.PropertiesUtil" />
+      <module name="Itrip-FreeMaker" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cn.itrip.util.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestTime" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Itrip-FreeMaker" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TestTime" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestTime.testLocaleTime" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Itrip-FreeMaker" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TestTime" />
+      <option name="METHOD_NAME" value="testLocaleTime" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Application.Genterator" />
+        <item itemvalue="Application.PropertiesUtil" />
+        <item itemvalue="JUnit.TestTime.testLocaleTime" />
+        <item itemvalue="JUnit.TestTime" />
         <item itemvalue="Application.DbTableUtil" />
       </list>
     </recent_temporary>
@@ -160,7 +196,11 @@
       <workItem from="1602252081411" duration="1592000" />
       <workItem from="1602253739136" duration="678000" />
       <workItem from="1602254525303" duration="5701000" />
-      <workItem from="1602316949877" duration="15103000" />
+      <workItem from="1602316949877" duration="15260000" />
+      <workItem from="1602344269121" duration="115000" />
+      <workItem from="1602344819494" duration="1150000" />
+      <workItem from="1602379089898" duration="738000" />
+      <workItem from="1602574574121" duration="9444000" />
     </task>
     <task id="LOCAL-00001" summary="爱旅行模版构建发布">
       <created>1602325568533</created>
@@ -169,7 +209,14 @@
       <option name="project" value="LOCAL" />
       <updated>1602325568533</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="测试运行通过,正式发布">
+      <created>1602344182388</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1602344182388</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -177,45 +224,46 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="爱旅行模版构建发布" />
-    <option name="LAST_COMMIT_MESSAGE" value="爱旅行模版构建发布" />
+    <MESSAGE value="测试运行通过,正式发布" />
+    <option name="LAST_COMMIT_MESSAGE" value="测试运行通过,正式发布" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="452" y="94" key="#Project_Structure" timestamp="1602253845135">
+    <state x="452" y="94" key="#Project_Structure" timestamp="1602576581462">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="452" y="94" key="#Project_Structure/0.0.1920.1040@0.0.1920.1040" timestamp="1602253845135" />
+    <state x="452" y="94" key="#Project_Structure/0.0.1920.1040@0.0.1920.1040" timestamp="1602576581462" />
     <state x="647" y="148" key="#com.intellij.ide.util.MemberChooser" timestamp="1602259651658">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="647" y="148" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1602259651658" />
-    <state x="440" y="44" key="CommitChangelistDialog2" timestamp="1602343491868">
+    <state x="440" y="44" key="CommitChangelistDialog2" timestamp="1602584132066">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="440" y="44" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1602343491868" />
+    <state x="440" y="44" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1602584132066" />
     <state x="690" y="199" key="FileChooserDialogImpl" timestamp="1602325511311">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="690" y="199" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1602325511311" />
-    <state x="769" y="386" width="381" height="369" key="Github.ShareDialog" timestamp="1602325768814">
+    <state x="769" y="386" width="381" height="369" key="Github.ShareDialog" timestamp="1602345414175">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="769" y="386" width="381" height="369" key="Github.ShareDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1602325768814" />
-    <state width="933" height="267" key="GridCell.Tab.0.bottom" timestamp="1602343732850">
+    <state x="769" y="386" width="381" height="369" key="Github.ShareDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1602345414175" />
+    <state width="1867" height="267" key="GridCell.Tab.0.bottom" timestamp="1602584056274">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="933" height="267" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1602343732850" />
-    <state width="933" height="267" key="GridCell.Tab.0.center" timestamp="1602343732850">
+    <state width="1867" height="267" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1602584056274" />
+    <state width="1867" height="267" key="GridCell.Tab.0.center" timestamp="1602584056274">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="933" height="267" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1602343732850" />
-    <state width="933" height="267" key="GridCell.Tab.0.left" timestamp="1602343732850">
+    <state width="1867" height="267" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1602584056274" />
+    <state width="1867" height="267" key="GridCell.Tab.0.left" timestamp="1602584056274">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="933" height="267" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1602343732850" />
-    <state width="933" height="267" key="GridCell.Tab.0.right" timestamp="1602343732850">
+    <state width="1867" height="267" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1602584056274" />
+    <state width="1867" height="267" key="GridCell.Tab.0.right" timestamp="1602584056274">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="933" height="267" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1602343732850" />
+    <state width="1867" height="267" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1602584056274" />
     <state x="377" y="92" key="Maven.ArtifactSearchDialog" timestamp="1602253879545">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -240,10 +288,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="503" y="170" width="831" height="682" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1602317233120" />
-    <state width="375" height="104" key="javadoc.popup.new" timestamp="1602342640287">
+    <state width="375" height="104" key="javadoc.popup.new" timestamp="1602583697540">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="375" height="104" key="javadoc.popup.new/0.0.1920.1040@0.0.1920.1040" timestamp="1602342640287" />
+    <state width="375" height="104" key="javadoc.popup.new/0.0.1920.1040@0.0.1920.1040" timestamp="1602583697540" />
     <state x="532" y="237" key="run.anything.popup" timestamp="1602319807527">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
