@@ -3,15 +3,12 @@ import java.util.Date;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 
-
-
 /**
  * ${table.comment}
  * @description:
  * @author: 浮沉
  * @create: ${.now}
  */
-
 @Data
 @EqualsAndHashCode(callSuper = true)
 public class ${table.className} extends BasePojo{
