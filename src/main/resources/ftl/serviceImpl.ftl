@@ -30,17 +30,17 @@ public class ${table.className}ServiceImpl implements ${table.className}Service 
         return ${table.daoName}Mapper.get${table.className}CountByMap(param);
     }
 
-    public Integer itriptxAdd${table.className}(${table.className} ${table.daoName})throws Exception{
+    public Integer txAdd${table.className}(${table.className} ${table.daoName})throws Exception{
         ${table.daoName}.setCreationDate(new Date());
         return ${table.daoName}Mapper.insert${table.className}(${table.daoName});
     }
 
-    public Integer itriptxModify${table.className}(${table.className} ${table.daoName})throws Exception{
+    public Integer txModify${table.className}(${table.className} ${table.daoName})throws Exception{
         ${table.daoName}.setModifyDate(new Date());
         return ${table.daoName}Mapper.update${table.className}(${table.daoName});
     }
 
-    public Integer itriptxDelete${table.className}ById(Long id)throws Exception{
+    public Integer txDelete${table.className}ById(Long id)throws Exception{
         return ${table.daoName}Mapper.delete${table.className}ById(id);
     }
 
