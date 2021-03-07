@@ -1,21 +1,9 @@
 package ${package}.mapper.${table.daoName};
-import ${package}.pojo.${table.className};
-import org.apache.ibatis.annotations.Param;
+import ${package}.entity.${table.className};
+import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import java.util.List;
 import java.util.Map;
 
-public interface ${table.className}Mapper {
-
-	public ${table.className} get${table.className}ById(@Param(value = "id") Long id)throws Exception;
-
-	public List<${table.className}> get${table.className}ListByMap(Map<String,Object> param)throws Exception;
-
-	public Integer get${table.className}CountByMap(Map<String,Object> param)throws Exception;
-
-	public Integer insert${table.className}(${table.className} ${table.daoName})throws Exception;
-
-	public Integer update${table.className}(${table.className} ${table.daoName})throws Exception;
-
-	public Integer delete${table.className}ById(@Param(value = "id") Long id)throws Exception;
+public interface ${table.className}Mapper extend BaseMapper<${table.className}>{
 
 }

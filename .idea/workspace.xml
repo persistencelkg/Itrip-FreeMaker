@@ -5,19 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="241fa27c-e8ba-4264-aab3-1943aa1e4739" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/ftl/controller.ftl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/itrip/Genterator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/itrip/Genterator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/itrip/bean/DBColumn.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/itrip/bean/DbColumn.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/itrip/bean/DBTable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/itrip/bean/DbTable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/itrip/handler/MvcHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/itrip/handler/MvcHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/itrip/util/DbTableUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/itrip/util/DbTableUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/itrip/util/PropertiesUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/itrip/util/PropertiesUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/itrip/util/StringUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/itrip/util/StringUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cn/itrip/util/SwitchTypeUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/itrip/util/SwitchTypeUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/db.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/db.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/ftl/mapper.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/ftl/mapper.ftl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/ftl/model.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/ftl/model.ftl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/TestTime.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestTime.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/ftl/clazzMapper.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/ftl/clazzMapper.ftl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/ftl/mapper.ftl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/ftl/service.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/ftl/service.ftl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/ftl/serviceImpl.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/ftl/serviceImpl.ftl" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,6 +27,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -56,9 +53,15 @@
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
-        <option name="mavenHome" value="/usr/local/apache-maven-3.6.3" />
-        <option name="userSettingsFile" value="/usr/local/apache-maven-3.6.3/conf/settings.xml" />
+        <option name="localRepository" value="D:\maven\mvn-jar" />
+        <option name="mavenHome" value="D:/maven/apache-maven-3.6.3" />
+        <option name="userSettingsFile" value="D:\maven\apache-maven-3.6.3\conf\settings.xml" />
       </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
     </option>
   </component>
   <component name="ProjectId" id="1idz6K8g6SuFnLs9AKn8VDwVCK9" />
@@ -68,6 +71,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
@@ -88,18 +92,22 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
+    <property name="two.files.diff.last.used.file" value="$PROJECT_DIR$/src/main/resources/ftl/mapper.ftl" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\IDEA-Projects\Itrip-FreeMaker\src\main\resources\old-ftl" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="cn.itrip.util" />
       <recent name="cn.itrip" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\IDEA-Projects\Itrip-FreeMaker\src\main\resources\ftl" />
+      <recent name="D:\IDEA-Projects\Itrip-FreeMaker\src\main\resources\old-ftl" />
       <recent name="D:\MyGitStore\GitHub\Itrip-FreeMaker\src\main\resources\ftl" />
       <recent name="D:\MyGitStore\GitHub\Itrip-FreeMaker\src\main\java\cn\itrip\handler" />
       <recent name="D:\MyGitStore\GitHub\Itrip-FreeMaker\src\main\java\cn\itrip\util" />
-      <recent name="D:\MyGitStore\GitHub\Itrip-FreeMaker\src\main\java\cn\itrip\bean" />
-      <recent name="D:\MyGitStore\GitHub\Itrip-FreeMaker\src\main\resources" />
     </key>
   </component>
   <component name="RunManager" selected="Application.DbTableUtil">
@@ -155,19 +163,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="TestTime.testLocaleTime" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
@@ -201,7 +196,7 @@
       </list>
     </option>
   </component>
-  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SpellCheckerSettings" BundledDictionaries="0" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="application-level" UseSingleDictionary="true" />
   <component name="SvnConfiguration">
     <configuration>C:\Users\追风\AppData\Roaming\Subversion</configuration>
   </component>
@@ -242,24 +237,51 @@
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="3" />
+    <option name="version" value="1" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="爱旅行模版构建发布" />
     <MESSAGE value="测试运行通过,正式发布" />
     <option name="LAST_COMMIT_MESSAGE" value="测试运行通过,正式发布" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="374" y="130" key="#Notifications" timestamp="1615131117169">
+      <screen x="0" y="0" width="1536" height="814" />
+    </state>
+    <state x="374" y="130" key="#Notifications/0.0.1536.814@0.0.1536.814" timestamp="1615131117169" />
+    <state x="614" y="312" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1615122542815">
+      <screen x="0" y="0" width="1536" height="814" />
+    </state>
+    <state x="614" y="312" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.1536.814@0.0.1536.814" timestamp="1615122542815" />
+    <state x="100" y="117" width="1336" height="614" key="DiffContextDialog" timestamp="1615125643666">
+      <screen x="0" y="0" width="1536" height="814" />
+    </state>
+    <state x="100" y="117" width="1336" height="614" key="DiffContextDialog/0.0.1536.814@0.0.1536.814" timestamp="1615125643666" />
+    <state x="549" y="178" key="FileChooserDialogImpl" timestamp="1615131148462">
+      <screen x="0" y="0" width="1536" height="814" />
+    </state>
+    <state x="549" y="178" key="FileChooserDialogImpl/0.0.1536.814@0.0.1536.814" timestamp="1615131148462" />
+    <state x="0" y="77" key="SettingsEditor" timestamp="1615131155100">
+      <screen x="0" y="0" width="1536" height="814" />
+    </state>
+    <state x="0" y="77" key="SettingsEditor/0.0.1536.814@0.0.1536.814" timestamp="1615131155100" />
+    <state x="431" y="135" width="672" height="678" key="search.everywhere.popup" timestamp="1615131707142">
+      <screen x="0" y="0" width="1536" height="814" />
+    </state>
+    <state x="431" y="135" width="672" height="678" key="search.everywhere.popup/0.0.1536.814@0.0.1536.814" timestamp="1615131707142" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
