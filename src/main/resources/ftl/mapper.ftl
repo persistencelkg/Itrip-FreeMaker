@@ -5,21 +5,29 @@
 
     <#--查询sql片段提炼-->
     <sql id="selectSql">
-        select * from ${table.tableName}
+        select
+        <#list table.columnList as column>
+            <#if column_has_next>
+                ${column.columnName},
+            <#else >
+                ${column.columnName}
+            </#if>
+        </#list>
+        from ${table.tableName}
     </sql>
 
-    <select id="get${table.className}ById" resultType="${table.className}" >
-        <include refid="selectSql"/>
-        <trim prefix="where" prefixOverrides="and | or">
-            <if test="id != null">
+    <select id = "get${table.className}ById" resultType = "${table.className}" >
+        <include refid = "selectSql"/>
+        <trim prefix = "where" prefixOverrides = "and | or">
+            <if test = "id != null">
                 and id = ${r"#{id}"}
             </if>
         </trim>
     </select>
 
-    <select id="get${table.className}ListByMap" resultType="${table.className}" parameterType="java.util.Map">
-        <include refid="selectSql"/>
-        <trim prefix="where" prefixOverrides="and | or">
+    <select id = "list${table.className}ByMap" resultType = "${table.className}" parameterType = "java.util.Map">
+        <include refid = "selectSql"/>
+        <trim prefix = "where" prefixOverrides = "and | or">
             <#list table.columnList as column>
                 <#if column_has_next>
                     <if test="${column.attributeName} != null and ${column.attributeName}!=''">

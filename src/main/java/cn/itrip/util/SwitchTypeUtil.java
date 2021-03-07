@@ -10,19 +10,22 @@ import java.util.Map;
  */
 public class SwitchTypeUtil {
 
-    private static final Map<String, String> jdbcTypeConvertToJavaTypeMap = new HashMap<String, String>(){{
+    private static final Map<String, String> JDBC_TYPE_CONVERT_TO_JAVA_TYPE_MAP = new HashMap<String, String>(){{
         put("BIGINT", "Long");
         put("INT", "Integer");
+        put("INT UNSIGNED", "Integer");
         put("TINYINT", "Integer");
         put("VARCHAR", "String");
         put("TEXT", "String");
-        put("DATETIME", "Date");
+        put("LONGTEXT", "Integer");
+//        put("DATETIME", "Date"); 升级到mysql8推荐的日期
+        put("DATETIME", "LocalDateTime");
         put("DECIMAL", "Double");
     }};
 
 
     public static String getJavaType(String jdbcType) {
-        String javaType = jdbcTypeConvertToJavaTypeMap.get(jdbcType);
+        String javaType = JDBC_TYPE_CONVERT_TO_JAVA_TYPE_MAP.get(jdbcType);
         return  javaType == null ? "Object" : javaType;
     }
 }

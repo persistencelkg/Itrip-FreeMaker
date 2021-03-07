@@ -1,21 +1,20 @@
-package ${package}.pojo;
-import java.util.Date;
+package ${package};
+import java.time.LocalDateTime;
 import lombok.Data;
-import lombok.EqualsAndHashCode;
 
 /**
  * ${table.comment}
  * @description:
- * @author: 浮沉
+ * @author: ${user}
  * @create: ${.now}
  */
 @Data
-@EqualsAndHashCode(callSuper = true)
-public class ${table.className} extends BasePojo{
+public class ${table.className} {
         <#list table.columnList as column>
         <#-- freemarker包括两个引号 -->
+
             <#if column.comment?trim?length gt 2>
-            //${column.comment}
+            // ${column.comment}
             </#if>
             private ${column.columnJavaType} ${column.attributeName};
         </#list>

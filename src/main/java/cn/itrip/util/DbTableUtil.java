@@ -1,7 +1,7 @@
 package cn.itrip.util;
 
-import cn.itrip.bean.DBColumn;
-import cn.itrip.bean.DBTable;
+import cn.itrip.bean.DbColumn;
+import cn.itrip.bean.DbTable;
 
 import java.sql.*;
 import java.util.ArrayList;
@@ -42,12 +42,12 @@ public class DbTableUtil {
 
     /**
      * 获取数据库中的所有表信息
-     * @return
+     * @return 数据表的结果集
      */
-    public static List<DBTable> getTable() {
+    public static List<DbTable> getTable() {
         //获取所有表名 的结果集
         ResultSet rs = null;
-        List<DBTable> tableList = new ArrayList<>();
+        List<DbTable> tableList = new ArrayList<>();
         try {
             //catalog: mysql中没有这个属性 oracle,我是基于mysql所以设置null
             //shemaPattern: 那个数据库 默认就是连接的数据库名 为null就是默认
@@ -64,7 +64,7 @@ public class DbTableUtil {
         //遍历结果集
             while(rs.next()) {
                 String tableName = rs.getString("TABLE_NAME");
-                DBTable table = new DBTable();
+                DbTable table = new DbTable();
                 table.setTableName(tableName);
                 table.setClassName(StringUtil.removeUnderLine(tableName));
                 table.setColumnList(getColumns(tableName));
@@ -76,10 +76,12 @@ public class DbTableUtil {
             e.printStackTrace();
         }finally {
             try{
-                if(rs != null)
+                if (rs != null) {
                     rs.close();
-                if(connection != null)
+                }
+                if (connection != null) {
                     connection.close();
+                }
             } catch (Exception e) {
                 e.printStackTrace();
             }
@@ -91,23 +93,22 @@ public class DbTableUtil {
 
     /***
      * 获取表注释
-     * @param tableName
-     * @return
-     * @throws SQLException
+     * @param tableName 表名
+     * @return 返回表的注释
      */
     private static String getTableComment(String tableName) throws SQLException {
-        PreparedStatement statement = connection.prepareStatement("show create table " + tableName);
+        PreparedStatement statement = connection.prepareStatement("SHOW create table " + tableName);
         ResultSet rs = statement.executeQuery();
         String secondColumn = null;
-        if(rs != null && rs.next())
+        if(rs != null && rs.next()) {
             secondColumn = rs.getString(2);
+        }
         int commentIndex = secondColumn.indexOf("COMMENT='");
         if(commentIndex == -1) {
             return "";
         } else {
-            String comment = null;
             //COMMENT=' 长度为9
-            comment = secondColumn.substring(commentIndex + 9);
+            String comment = secondColumn.substring(commentIndex + 9);
             //舍弃最后一个逗号
             return comment.substring(0, comment.length() - 1);
         }
@@ -115,33 +116,33 @@ public class DbTableUtil {
     }
 
 
-
-
     /**
      * 获取表中的所有字段信息
      * @param tableName
      */
-    private static List<DBColumn> getColumns(String tableName) throws SQLException {
-        List<DBColumn> columnList = new ArrayList<>();
+    private static List<DbColumn> getColumns(String tableName) throws SQLException {
+        List<DbColumn> columnList = new ArrayList<>();
 
         ResultSet rsColumns = metaData.getColumns(null, "%", tableName, "%");
-        //遍历table下的所有字段
+        // 遍历table下的所有字段
         while (rsColumns.next()) {
-
-        //获取列名
+            DbColumn column = new DbColumn();
+        // 获取列名
             String columnName = rsColumns.getString("COLUMN_NAME");
-            //为了抽离BasePojo 需要这段代码 但是其他模版生成不能有 故分开启动模版生成
-            if(columnName.equals("id") || columnName.equals("creationDate")||
-                        columnName.equals("createdBy") || columnName.equals("modifyDate") || columnName.equals("modifiedBy") )
-                continue;
+//            //如果需要抽离BasePojo 需要这段代码 但是其他模版生成不能有 仅仅适用于pojo的分层
+              //但是需要注意的是 列名的的
+//            if ( columnName.equals("id") || columnName.equals("creationDate")||
+//                        columnName.equals("createdBy") || columnName.equals("modifyDate") || columnName.equals("modifiedBy") ) {
+//                continue;
+//            }
         //获取列的类型
             String typeName = rsColumns.getString("TYPE_NAME");
         //获取列的注释
             String remarks = rsColumns.getString("REMARKS");
 
-            DBColumn column = new DBColumn();
             column.setColumnName(columnName);
-            column.setAttributeName(columnName);
+        //映射属性名
+            column.setAttributeName(StringUtil.removeUnderLine(columnName));
             column.setColumnJdbcType(typeName);
         //jdbc-->java
             column.setColumnJavaType(SwitchTypeUtil.getJavaType(typeName));
@@ -159,10 +160,9 @@ public class DbTableUtil {
 
 
     public static void main(String[] args) throws Exception {
-        List<DBTable> table = getTable();
+        List<DbTable> table = getTable();
         table.forEach(System.out::println);
         //getColumns("web_admin");
     }
-
 
 }

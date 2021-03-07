@@ -5,34 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="241fa27c-e8ba-4264-aab3-1943aa1e4739" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/itrip/Genterator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/itrip/Genterator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/itrip/bean/DBColumn.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/itrip/bean/DbColumn.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/itrip/bean/DBTable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/itrip/bean/DbTable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/itrip/handler/MvcHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/itrip/handler/MvcHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/itrip/util/DbTableUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/itrip/util/DbTableUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/itrip/util/PropertiesUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/itrip/util/PropertiesUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/itrip/util/StringUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/itrip/util/StringUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/cn/itrip/util/SwitchTypeUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cn/itrip/util/SwitchTypeUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/db.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/db.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/ftl/mapper.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/ftl/mapper.ftl" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/ftl/model.ftl" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/ftl/model.ftl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/itrip/Genterator.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/itrip/bean/DBColumn.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/itrip/bean/DBTable.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/itrip/handler/MvcHandler.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/itrip/util/DbTableUtil.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/itrip/util/FreeMarkerUtil.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/itrip/util/PathConstant.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/itrip/util/PropertiesUtil.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/itrip/util/StringUtil.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/itrip/util/SwitchTypeUtil$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/cn/itrip/util/SwitchTypeUtil.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/db.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ftl/clazzMapper.ftl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ftl/mapper.ftl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ftl/model.ftl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ftl/service.ftl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/ftl/serviceImpl.ftl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/itrip-FreeMaker.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/TestTime.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/TestTime.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestTime.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,6 +36,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/src/main/java/cn/itrip/util/StringUtil.java" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IgnoredFileRootStore">
     <option name="generatedRoots">
@@ -114,10 +102,10 @@
       <recent name="D:\MyGitStore\GitHub\Itrip-FreeMaker\src\main\resources" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Genterator">
+  <component name="RunManager" selected="Application.DbTableUtil">
     <configuration name="DbTableUtil" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="cn.itrip.util.DbTableUtil" />
-      <module name="Itrip-FreeMaker" />
+      <module name="Mykj-FreeMaker" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="cn.itrip.util.*" />
@@ -154,28 +142,35 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+    <configuration name="StringUtil" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="cn.itrip.util.StringUtil" />
+      <module name="Mykj-FreeMaker" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cn.itrip.util.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TestTime" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Itrip-FreeMaker" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="TestTime" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <configuration name="TestTime.testLocaleTime" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Itrip-FreeMaker" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="TestTime" />
       <option name="METHOD_NAME" value="testLocaleTime" />
@@ -186,11 +181,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.DbTableUtil" />
+        <item itemvalue="Application.StringUtil" />
+        <item itemvalue="JUnit.TestTime.testLocaleTime" />
         <item itemvalue="Application.Genterator" />
         <item itemvalue="Application.PropertiesUtil" />
-        <item itemvalue="JUnit.TestTime.testLocaleTime" />
-        <item itemvalue="JUnit.TestTime" />
-        <item itemvalue="Application.DbTableUtil" />
       </list>
     </recent_temporary>
   </component>
@@ -226,7 +221,8 @@
       <workItem from="1602379089898" duration="738000" />
       <workItem from="1602574574121" duration="9444000" />
       <workItem from="1614779540803" duration="90000" />
-      <workItem from="1614779638996" duration="577000" />
+      <workItem from="1614779638996" duration="1122000" />
+      <workItem from="1615102239681" duration="8241000" />
     </task>
     <task id="LOCAL-00001" summary="爱旅行模版构建发布">
       <created>1602325568533</created>
@@ -258,6 +254,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="爱旅行模版构建发布" />
