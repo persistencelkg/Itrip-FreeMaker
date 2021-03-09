@@ -28,7 +28,8 @@ public abstract class FreeMarkerUtil {
         Configuration configuration = new Configuration(Configuration.getVersion());
         try {
             //设置所有模板文件所在文件夹
-            configuration.setDirectoryForTemplateLoading(new File(PathConstant.TEMPLATE_PATH));
+            String ftlPath = FreeMarkerUtil.class.getClassLoader().getResource("ftl").getPath();
+            configuration.setDirectoryForTemplateLoading(new File(ftlPath));
             configuration.setDefaultEncoding("UTF-8");
 
             //获取模版
@@ -49,14 +50,12 @@ public abstract class FreeMarkerUtil {
     public static void generateFile(Map<String, Object> dataMap, String templateFileName, String savePath, String saveFileName) {
         try {
             Template template = getTemplate(templateFileName);
-
-
             //保存路径
-            File file  = new File(savePath + "\\");
+            File file  = new File(savePath + File.separator);
             if (!file.exists())
                 file.mkdirs();
             //输出的文件
-            FileOutputStream stream = new FileOutputStream(savePath + "\\" + saveFileName);
+            FileOutputStream stream = new FileOutputStream(savePath + File.separator + saveFileName);
             template.process(dataMap, new OutputStreamWriter(stream));
         } catch (Exception e) {
             e.printStackTrace();

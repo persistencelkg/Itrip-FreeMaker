@@ -1,4 +1,4 @@
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 import java.time.Clock;
 import java.time.LocalDateTime;
@@ -29,5 +29,11 @@ public class TestTime {
         TestTime a1 = new TestTime();
         TestTime a2 = new TestTime();
         System.out.println(a1.equals(a2));
+
+        String osName = System.getProperty("os.name").toLowerCase();
+        System.out.println(osName);
+        System.out.println(this.getClass().getClassLoader().getResource("ftl").getPath());
+
     }
+
 }
